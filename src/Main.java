@@ -14,11 +14,13 @@ public class Main { // 클래스 이름은 항상 대문자로 시작한다.파�
 //			System.out.println("i is " + i);
 //		}
 		// print
-		System.out.print("Java print"); // 개행 처리 불가
-		// printf
-		System.out.printf("Java printf"); // 개행 처리 불가 
-		// println
-		System.out.println("Java println"); // 개행 처리 가능
+//		System.out.print("Java print"); // 개행 처리 불가
+//		// printf
+//		System.out.printf("Java printf"); // 개행 처리 불가 
+//		// println
+//		System.out.println("Java println"); // 개행 처리 가능
+		
+
 		
 	}
 
