@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>form</h1>
+    <form action="/form/result" method="post">
+        <fieldset>
+            <label>이름</label>
+            <input type="text" name="name">
+            <br />
+            <label>성별</label>
+            <input type="radio" name="gender" value="man"> 남자
+            <input type="radio" name="gender" value="woman"> 여자
+            <br />
+            <label>생년월일</label>
+            <select name="year">
+               <script>
+                   for (var i = 1900; i <= 2023; i++) {
+                       document.write('<option value="' + i + '">' + i + '</option>');
+                   }
+               </script>
+            </select>
+            <label for="year">년</label>
+            <select name="month">
+                <script>
+                    for (var i = 1; i <= 12; i++) {
+                        document.write('<option value="' + i + '">' + i + '</option>');
+                    }
+                </script>
+            </select>
+            <label for="month">월</label>
+            <select name="day">
+                <script>
+                    for (var i = 1; i <= 31; i++) {
+                        document.write('<option value="' + i + '">' + i + '</option>');
+                    }
+                </script>
+            </select>
+            <label for="day">일</label>
+            <br />
+            <label>관심사</label>
+            <input type="checkbox" name="interest" value="여행"> 여행
+            <input type="checkbox" name="interest" value="패션"> 패션
+            <input type="checkbox" name="interest" value="음식"> 음식
+        </fieldset>
+        <button>전송</button>
+    </form>
+</body>
+</html>

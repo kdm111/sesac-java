@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>age</title>
+</head>
+<body>
+    <div
+            th:if="${age} >= 20"
+            style="color : green;"
+            th:text="${age} + '세는 성인입니다.'"
+    >20세는 성인입니다.</div>
+    <div
+            th:unless="${age} >= 20"
+            style="color : blue;"
+            th:text="${age} + '세는 미성년자입니다.'"
+    ></div>
+</body>
+</html>
